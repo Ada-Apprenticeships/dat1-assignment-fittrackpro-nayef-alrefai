@@ -30,9 +30,7 @@ FROM members m
 JOIN class_attendance ca ON m.member_id = ca.member_id
 GROUP BY m.member_id, m.first_name, m.last_name
 ORDER BY registration_count DESC
-LIMIT 1;
-
---Multiple people have the same registration count 
+LIMIT 1; 
 
 -- 5. Find member with the least class registrations
 SELECT 
