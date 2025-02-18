@@ -242,8 +242,8 @@ Use this as a checklist to keep track of your progress.
 6. [x] 4.6 Calculate average number of classes per member
 
 #### 5. Membership Management (membership_management.sql)
-1. [ ] 5.1 List all active memberships
-2. [ ] 5.2 Calculate the average duration of gym visits for each membership type
+1. [x] 5.1 List all active memberships
+2. [x] 5.2 Calculate the average duration of gym visits for each membership type
 3. [ ] 5.3 Identify members with expiring memberships this year
 
 #### 6. Attendance Tracking (attendance_tracking.sql)
