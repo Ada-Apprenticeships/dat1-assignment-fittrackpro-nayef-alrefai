@@ -48,10 +48,10 @@ FROM class_attendance
 WHERE member_id = 11  
 ORDER BY schedule_id DESC;
 
-/*  
+ 
 DELETE FROM class_attendance  
 WHERE class_attendance_id = 15;  
-*/
+
 
 -- 5. List top 5 most popular classes
 WITH class_registrations AS (

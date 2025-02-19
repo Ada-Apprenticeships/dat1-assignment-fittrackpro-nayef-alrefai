@@ -8,8 +8,7 @@ PRAGMA foreign_keys = ON;
 -- Payment Management Queries  
 
 -- 1. Record a payment for a membership
---WARNING RUNNING THIS QUERY WILL ADD A COPY OF THE EXISTING PAYMENT 
- /*  
+--WARNING RUNNING THIS QUERY WILL ADD A COPY OF THE EXISTING PAYMENT  
 INSERT INTO payments (member_id, amount, payment_date, payment_method, payment_type)  
 VALUES (  
     11,  
@@ -17,8 +16,7 @@ VALUES (
     CURRENT_TIMESTAMP,  
     'Credit Card',  
     'Monthly membership fee'  
-);  
-*/
+);
 
 --TESTING QUERY FOR RECORD PAYMENT
 SELECT * FROM payments 

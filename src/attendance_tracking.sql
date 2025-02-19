@@ -8,10 +8,10 @@ PRAGMA foreign_keys = ON;
 -- Attendance Tracking Queries
 
 -- 1. Record a member's gym visit
-/* WARNING running this will add a duplicate entry 
+--WARNING running this will add a duplicate entry 
 INSERT INTO attendance (member_id, location_id, check_in_time, check_out_time)
 VALUES (7, 1, CURRENT_TIMESTAMP, NULL);
-*/
+
 
 --TESTING QUERY
 SELECT * FROM attendance
@@ -55,7 +55,9 @@ FROM
         location_id,  
         DATE(check_in_time) AS visit_date,  
         COUNT(*) AS visit_count  
-    FROM attendance  
+    
+    FROM attendance
+      
     GROUP BY location_id, visit_date) 
 
 AS daily_visits  
