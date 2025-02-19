@@ -8,7 +8,14 @@ PRAGMA foreign_keys = ON;
 -- User Management Queries
 
 -- 1. Retrieve all members
-SELECT * FROM members;
+SELECT 
+    member_id, 
+    first_name,
+    last_name,
+    email,
+    join_date 
+FROM members;
+
 
 -- 2. Update a member's contact information
 UPDATE members
